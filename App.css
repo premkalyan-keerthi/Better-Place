@@ -1,5 +1,5 @@
 
-.userinfo_image {
+.alldetails {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
@@ -7,21 +7,21 @@
   position: relative;
   left: 250px;
 }
-.userinfo_details {
+.user_details {
   display: flex;
   flex-direction: column;
   height: 100px;
 }
-.userimage{
+.picture{
   height: 150px;
 
 }
-.username {
+.info {
   display: flex;
   flex-direction: row;
   font-size: 30px;
 }
-.userlabel {
+.lbl {
   font-weight: bold;
   height: 40px;
   font-size: 30px;
@@ -46,19 +46,19 @@
   margin: auto;
   background: white;
 }
-.image_dialog {
+.img {
   position:absolute;
   box-shadow: 0 8px 6px -6px black;
   position: static;
   left: 20%;
   top: 10%;
 }
-.smallimage{
+.previmg{
   height: 150px;
   width: 175px;
 
 }
-.image_large {
+.postimg {
   width: 300px;
 }
 .gender{
@@ -76,7 +76,7 @@
   font-size: 20px;
   margin-top: 15px;
 }
-.ResultPerPage{
+.no_of_results{
   position: relative;
   width: 150px;
   height: 50px;
@@ -103,11 +103,11 @@
   position: absolute;
   margin-left: 600px;
   margin-top: 15px;
-}.Header{
+}.header{
   margin-bottom: 30px;
   height: 130px;
 }
-.Body{
+.body{
   background-color:grey;
   color:white;
 }
