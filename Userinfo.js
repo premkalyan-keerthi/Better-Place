@@ -1,27 +1,27 @@
 import React from "react";
 import "./App.css";
-import Popup from "./Popup";
+import LandingPage from "./LandingPage";
 function Userinfo(props) {
   return (
-    <div className="userinfo_image">
+    <div className="alldetails">
       <div>
-        <Popup className="userimage" image={props.thumbnail} alt="my"></Popup>
+        <LandingPage className="picture" image={props.thumbnail} alt="pic"></LandingPage>
       </div>
-      <div className="userinfo_details">
-        <div className="username">
-          <label className="userlabel">Name: </label>
-          <div className="userdetail">{props.name}</div>
+      <div className="user_details">
+        <div className="info">
+          <label className="lbl">Name: </label>
+          <div >{props.name}</div>
         </div>
-        <div className="username">
-          <label className="userlabel">Gender: </label>
+        <div className="info">
+          <label className="lbl">Gender: </label>
           <div>{props.gender}</div>
         </div>
-        <div className="username">
-          <label className="userlabel">Email: </label>
+        <div className="info">
+          <label className="lbl">Email: </label>
           <div>Phone :{props.email}</div>
         </div>
-        <div className="username">
-          <label className="userlabel">Nationality: </label>
+        <div className="info">
+          <label className="lbl">Nationality: </label>
           <div>{props.nationality}</div>
         </div>
       </div>
