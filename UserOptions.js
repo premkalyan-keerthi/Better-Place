@@ -13,7 +13,7 @@ class UserOptions extends React.Component {
       updated: false
     };
   }
-  previousbutton = () => {
+  prevbutton = () => {
     if (this.state.s > 1) {
       var a = this.state.s;
       this.setState({ s: a - 1 });
@@ -58,8 +58,8 @@ class UserOptions extends React.Component {
   render() {
     console.log(this.state.s);
     return (
-      <div className='Body'>
-        <div className="Header">
+      <div className='body'>
+        <div className="header">
         <div className="Alloptions">
         <select className="gender" value={this.state.gender || ""} onChange={this.genderchange}>
           <option>Gender</option>
@@ -75,7 +75,7 @@ class UserOptions extends React.Component {
           <option value="GB">GREAT BRITAIN(GB)</option>
           <option value="US">USA(US)</option>
         </select>
-        <select className="ResultPerPage" value={this.state.res || ""} onChange={this.reschange}>
+        <select className="no_of_results" value={this.state.res || ""} onChange={this.reschange}>
           <option>No. of results</option>
           <option value="10">10</option>
           <option value="20">20</option>
@@ -84,7 +84,7 @@ class UserOptions extends React.Component {
         </select>
         </div>
         <div className="Prev">
-        <button className="Pre" onClick={this.previousbutton}>Prev-Page</button>
+        <button className="Pre" onClick={this.prevbutton}>Prev-Page</button>
         <button className="Next"  onClick={this.nextbutton}>Next-Page</button>
         </div>
         </div>
